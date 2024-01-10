@@ -1,0 +1,52 @@
+body{
+width: 900px;
+height: 0 auto;
+margin: 0;
+padding: 0;
+}
+.box{
+    width: 200px;
+    height: 200px;
+    background: blue;
+    border-radius: 10% 10% 80% 10%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 80px;
+    color: yellow;
+
+    position: relative;
+    top:0;
+    left: 0;
+
+    animation: isken 4s infinite;
+    
+}
+@keyframes isken {
+    0%{
+       top: 0;left: 0;
+        border-radius: 10% 10% 80% 10%;
+        color: yellow;
+    }
+    25%{
+        top:0;left:1200px;
+        background-color: rgb(0, 217, 255);
+        border-radius: 10% 10% 10% 80%;
+        color: rgb(62, 62, 112);
+    }
+    50%{
+        top:430px;left:1200px;
+        background-color: rgb(0, 0, 0);
+        border-radius: 80% 10% 10% 10%;
+        color: green;
+}
+    75%{
+    top: 430px;
+    left: 0;  
+    background-color: rgb(30, 189, 16);
+    border-radius: 10% 80% 10% 10%;
+    color: red;
+    }
+
+}
